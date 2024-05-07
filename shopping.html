@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HindArtistry Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Add your custom styles here */
+        .jumbotron {
+            background-image: url('images/index.jpg');
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .product {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .product {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar ficnavbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">HindArtistry</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-4"><strong> Discover the Essence of Indian Artistry</strong></h1>
+        <p class="lead"><strong>Shop Anything from Anywhere.</strong></p>
+    </div>
+    
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://as1.ftcdn.net/v2/jpg/07/06/66/26/1000_F_706662636_I7SObkEPam7WjTYnN9Lr3OmpNV5EqDvf.jpg" class="card-img-top" alt="Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title">Fabric</h5>
+                        <p class="card-text">It is primarily made from cotton, silk or synthetic fibers like nylon, rayon and polyester. </p><br><br>
+                        <a href="fibric.html" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnn7eBv20NJyK5Q72HjnkLtDc9IyfLvYukyUYVKgHGnA&s" class="card-img-top" alt="Burger">
+                    <div class="card-body">
+                        <h5 class="card-title">Accessories</h5>
+                        <p class="card-text">Accessories are items of equipment that are not usually essential.</p><br><br>
+                        <a href="accessories.html   " class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/home.jpeg" class="card-img-top" alt="Pasta">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Decor</h5>
+                        <p class="card-text">Interior design makes effective use of space by creating new rooms, experimenting with different perspectives, and so on. </p>
+                        <a href="home.html" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/spices.jpg" class="card-img-top" alt="Pasta">
+                    <div class="card-body">
+                        <h5 class="card-title">Spices</h5>
+                        <p class="card-text">Spices and herbs are defined as plant derived substances that add flavor to any dish.</p><br><br>
+                        <a href="spices.html" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Introducing DesiCraft, your gateway to the rich tapestry of Indian art and craftsmanship. We curate exquisite fabrics, aromatic spices, captivating home decor, and accessories that embody the essence of Indian heritage.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product" style="background-color: #f2d9e6;">
+            <h3>Fabrics</h3>
+            <p>Explore a kaleidoscope of colors and textures with our handpicked selection of Indian fabrics, ranging from luxurious silks to vibrant cotton prints.</p>
+        </div>
+        <div class="product" style="background-color: #d9e6f2;">
+            <h3>Spices</h3>
+            <p>Indulge your senses with the aromatic flavors of India. Our collection of spices will elevate your culinary creations to new heights.</p>
+        </div>
+        <div class="product" style="background-color: #e6f2d9;">
+            <h3>Home Decor</h3>
+            <p>Add a touch of Indian elegance to your living space with our stunning home decor pieces, from intricately carved woodwork to exquisite handwoven rugs.</p>
+        </div>
+        <div class="product" style="background-color: #f2e6d9;">
+            <h3>Accessories</h3>
+            <p>Complete your look with our range of accessories inspired by Indian craftsmanship, including statement jewelry, embroidered bags, and more.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries or orders, please reach out to us at:</p>
+        <address>
+            Email: info@desicraft.com<br>
+            Phone: +91-123-456-7890<br>
+            Address: 123, Craftsmanship Lane, Artisan City, India
+        </address>
+    </section>
+    <br><br><Br><br><br>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Shopping Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

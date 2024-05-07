@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> HindArtistry</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .col {
+      padding: 0 10px;
+    }
+
+    .col img {
+      width: 100%;
+      height: 200px; /* Ensure image height is consistent */
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .col img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-explore {
+      margin-top: 10px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+      height: 100%; /* New style to ensure consistent card height */
+      display: flex;
+      flex-direction: column; /* Align card content vertically */
+      opacity: 0; /* Initially hide cards */
+    }
+
+    .card-body {
+      flex-grow: 1; /* Allow card-body to fill available space */
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Space out content */
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="shopping.html">HindArtistry</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="shopping.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <h1 class="text-center mb-4">FABRICS</h1>
+
+  <div class="container" id="container">
+    <div class="row">
+      <!-- Existing cards replicated for a full grid -->
+      <div class="col-md-3">
+        <div class="card">
+          <a href="https://example.com/page1">
+            <img src="images/silk.jpg" alt="Silk" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Silk</h3>
+            <a href="silk.html"><button class="btn btn-primary btn-block btn-explore">Explore Now</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="https://example.com/page2">
+            <img src="images/bandhani.jpg" alt="Bandhani sari" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Bandhani sari</h3>
+            <a href="bandhani.html"><button class="btn btn-primary btn-block btn-explore">Explore Now</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="https://example.com/page3">
+            <img src="images/dola.jpg" alt="Dola Silk" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Dola Silk</h3>
+            <a href="dolasilk.html"><button class="btn btn-primary btn-block btn-explore">Explore Now</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="https://example.com/page4">
+            <img src="images/kanjivaram.jpg" alt="Kanjivaram" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Kanjivaram</h3>
+            <a href="kanjivaram.html"><button class="btn btn-primary btn-block btn-explore">Explore Now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional rows -->
+    <div class="row">
+      <!-- First Row -->
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/xy.jpg" alt="Image 1" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 1</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/cy.jpg" alt="Image 2" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 2</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/im1 (1).jpg" alt="Image 3" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 3</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/im2 (1).jpg" alt="Image 4" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 4</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- First Row -->
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/im3 (1).jpg" alt="Image 1" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 1</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/im4 (1).jpg" alt="Image 2" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 2</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/im5 (1).jpg" alt="Image 3" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 3</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/im6 (1).jpg" alt="Image 4" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 4</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <!-- First Row -->
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/im7 (1).jpg" alt="Image 1" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 1</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/im8 (1).jpg" alt="Image 2" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 2</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/im9 (1).jpg" alt="Image 3" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 3</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <a href="#">
+            <img src="images/im10 (1).jpg" alt="Image 4" class="img-fluid rounded">
+          </a>
+          <div class="card-body">
+            <h3 class="card-title text-center">Image 4</h3>
+            <button class="btn btn-primary btn-block btn-explore">Explore Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function fadeInRows() {
+      const rows = document.querySelectorAll('.row');
+      rows.forEach(row => {
+        if (isInViewport(row)) {
+          const cards = row.querySelectorAll('.card');
+          cards.forEach((card, index) => {
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.animation = 'fadeIn 0.5s ease-in-out';
+            }, index * 100);
+          });
+        }
+      });
+    }
+
+    window.addEventListener('scroll', fadeInRows);
+    window.addEventListener('load', fadeInRows);
+  </script>
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+        <p>&copy; 2024 Shopping Website. All Rights Reserved.</p>
+    </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
